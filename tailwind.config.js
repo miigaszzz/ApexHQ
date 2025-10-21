@@ -2,10 +2,23 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", 
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class', // Ativa o modo escuro manual (vamos usar um botão)
   theme: {
-    extend: {},
+    extend: {
+      // By Miguel Silva
+      colors: {
+        'f1-red': '#FF1E00',
+        'f1-dark': '#0D0D0D', 
+        'f1-light-gray': '#C0C0C0',
+      },
+      // By Miguel Silva
+      fontFamily: {
+        orbitron: ['Orbitron', 'sans-serif'], // Títulos
+        inter: ['Inter', 'sans-serif'],       // Texto
+      },
+    },
   },
   plugins: [],
 }
