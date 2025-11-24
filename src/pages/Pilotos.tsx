@@ -20,7 +20,7 @@ const Pilotos = () => {
             key={team.id} 
             className="bg-[#15151e] rounded-xl border border-white/10 overflow-hidden hover:border-f1-red/50 transition-all duration-300 group"
           >
-            {/* 1. Cabeçalho da Equipa (Logo e Nome) */}
+            {/* 1. Logo e Nome da Equipa */}
             <div className="bg-white/5 p-4 flex items-center justify-between border-b border-white/5">
               <h2 className="font-orbitron text-xl md:text-2xl font-bold text-white uppercase tracking-wider">
                 {team.name}
@@ -33,7 +33,7 @@ const Pilotos = () => {
             </div>
 
             <div className="p-6 relative">
-              {/* 2. Os Pilotos (Lado a Lado) */}
+              {/* 2. Pilotos */}
               <div className="flex justify-around items-end mb-12 relative z-10">
                 {team.drivers.map((driver) => (
                   <div key={driver.id} className="text-center flex flex-col items-center">
@@ -61,8 +61,8 @@ const Pilotos = () => {
                 ))}
               </div>
 
-              {/* 3. O Carro (Em baixo, centrado) */}
-              <div className="absolute -bottom-4 left-0 right-0 flex justify-center pointer-events-none">
+              {/* Carro */}
+              <div className="absolute -bottom-20 left-0 right-0 flex justify-center pointer-events-none">
                 <img 
                   src={team.car_image} 
                   alt={`${team.name} Car`} 
@@ -71,8 +71,8 @@ const Pilotos = () => {
               </div>
             </div>
             
-            {/* Espaço extra transparente para o carro não cortar */}
-            <div className="h-12 md:h-16"></div>
+            {/* Espaco em Branco */}
+            <div className="h-18 md:h-16"></div>
           </div>
         ))}
       </div>
