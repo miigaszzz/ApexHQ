@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', // Ativa o modo escuro manual (vamos usar um botão)
+  darkMode: 'class', 
   theme: {
     extend: {
       // By Miguel Silva
